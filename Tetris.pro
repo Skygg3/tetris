@@ -1,9 +1,10 @@
 TEMPLATE = app
-CONFIG += console c++11
+CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        Board.cpp \
         Pieces.cpp \
         main.cpp
 
@@ -14,4 +15,5 @@ LIBS += -LD:/Workspace/extlib/SDL2-2.0.10/lib/x64 \
           -lSDL2main   \
 
 HEADERS += \
+    Board.h \
     Pieces.h

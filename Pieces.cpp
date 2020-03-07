@@ -1,10 +1,10 @@
 #include "Pieces.h"
 
-const int KIND = 7;
-const int ROTATION = 4;
-const int HORIZONTAL_BLOCKS = 5;
-const int VERTICAL_BLOCKS = 5;
-const int POSITION = 2;
+constexpr int KIND = 7;
+constexpr int ROTATION = 4;
+constexpr int HORIZONTAL_BLOCKS = 5;
+constexpr int VERTICAL_BLOCKS = 5;
+constexpr int POSITION = 2;
 
 // clang-format off
 // Pieces definition
