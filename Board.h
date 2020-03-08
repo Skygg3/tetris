@@ -33,6 +33,6 @@ private:
     Pieces *m_pieces;
     int m_screenHeight;
 
-    void InitBoard();
-    void DeleteLine(int pY);
+    void initBoard();
+    void deleteLine(int y);
 };
