@@ -6,7 +6,6 @@ CONFIG -= qt
 SOURCES += \
         Board.cpp \
         Game.cpp \
-        IO.cpp \
         Pieces.cpp \
         main.cpp
 
@@ -19,5 +18,4 @@ LIBS += -LD:/Workspace/extlib/SDL2-2.0.10/lib/x64 \
 HEADERS += \
     Board.h \
     Game.h \
-    IO.h \
     Pieces.h

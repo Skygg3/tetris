@@ -1,18 +1,18 @@
-#include <iostream>
-
-#include <SDL.h>
+#include "Game.h"
 
 int main(int argc, char *argv[])
 {
-    SDL_Init(SDL_INIT_VIDEO);
+    auto game = new Game();
+    game->init("Tetris", 800, 600, false);
 
-    SDL_Window *fenetre = SDL_CreateWindow(
-      "Tetris", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
+    while (game->running())
+    {
+        game->handleEvent();
+        game->update();
+        game->render();
+    }
 
-    SDL_Delay(3000);
-
-    SDL_DestroyWindow(fenetre);
-    SDL_Quit();
+    game->clean();
 
     return 0;
 }
