@@ -102,7 +102,7 @@ bool Board::isGameOver()
 
 void Board::initBoard()
 {
-    std::fill_n(m_board, BOARD_WIDTH * BOARD_HEIGHT, POS_FREE);
+    std::fill_n(&m_board[0][0], BOARD_WIDTH * BOARD_HEIGHT, POS_FREE);
 }
 
 void Board::deleteLine(int y)
